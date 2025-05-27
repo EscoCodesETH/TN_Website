@@ -1,0 +1,213 @@
+:root {
+    --primary: #FF00FF;   /* Miami Vice pink */
+    --accent: #00FFFF;    /* Miami Vice cyan */
+    --bg: #000000;       /* Dark background */
+    --text: #ffffff;     /* White text */
+    --light: #1a1a1a;    /* Dark gray for sections */
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #001F54 50%, #000000 100%);
+    color: var(--text);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  
+  /* header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 10px var(--primary);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    position: relative;
+  } */
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  /* .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  } */
+  
+  /* .nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+   */
+  .section {
+    /* padding: 120px 40px 80px; */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(0, 31, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('/Website/images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    padding: 160px 40px;
+    color: white;
+    max-width: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    /* margin-top: -80px; */
+  }
+  
+  .hero .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .hero .image {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .btn {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+  
+  .features-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature {
+    flex: 1 1 30%;
+    background: linear-gradient(135deg, #002366 0%, #000000 100%);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+    min-width: 300px;
+  }
+  
+  .feature:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+  }
+  
+  .feature img {
+    width: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .feature.ai-blockchain {
+    background: linear-gradient(135deg, #001F54 0%, #000000 100%);
+    border: 1px solid var(--primary);
+  }
+  
+  .feature.ai-blockchain h3 {
+    color: var(--primary);
+  }
+  
+  .feature.ai-blockchain p {
+    color: var(--text);
+  }
+  
+  .highlight {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #002366 0%, #000000 100%);
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  }
+  
+  .highlight img {
+    max-width: 280px;
+  }
+  
+  .faq > div {
+    margin-top: 20px;
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--light);
+    color: var(--text);
+  }
+  
+  form button {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background: var(--accent);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #002366 0%, #000000 100%);
+    color: var(--text);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--primary);
+  }
+  
