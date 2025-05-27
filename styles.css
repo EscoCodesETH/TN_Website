@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, rgba(0, 31, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('/Website/images/background.jpeg');
+    background: linear-gradient(135deg, rgba(0, 31, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
