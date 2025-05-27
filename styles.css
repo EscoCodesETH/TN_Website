@@ -16,7 +16,7 @@
     min-height: 100vh;
   }
   
-  /* header {
+  header {
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -26,7 +26,7 @@
     z-index: 10;
     backdrop-filter: blur(10px);
     position: relative;
-  } */
+  }
   
   .logo {
     font-size: 1.5rem;
@@ -34,13 +34,13 @@
     color: var(--primary);
   }
   
-  /* .nav-links {
+  .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
-  } */
+  }
   
-  /* .nav-links a {
+  .nav-links a {
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
@@ -50,9 +50,9 @@
   .nav-links a:hover {
     color: var(--primary);
   }
-   */
+  
   .section {
-    /* padding: 120px 40px 80px; */
+    padding: 120px 40px 80px;
     max-width: 1200px;
     margin: auto;
   }
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, rgba(0, 31, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/background.jpeg');
+    background: linear-gradient(135deg, rgba(0, 31, 84, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url('/TN_Website/images/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,18 +72,26 @@
     max-width: none;
     box-sizing: border-box;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-    /* margin-top: -80px; */
   }
   
   .hero .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 80px;
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+    padding-top: 0;
   }
   
   .hero .image {
-    display: none;
+    display: block;
+    width: 500px;
+    height: 100%;
+  }
+  
+  .hero .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
   
   .hero h1 {
