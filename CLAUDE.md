@@ -1,32 +1,11 @@
-# CLAUDE.md
+# Website development notes
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This repository is the static UP³ product website developed by True Numbers. STARS is the named travel and reimbursement service within UP³.
 
-## Project Overview
-This is a static marketing website for True Numbers, a blockchain defense solutions company. The site is built with vanilla HTML, CSS, and JavaScript - no frameworks or build tools required.
+Use two pages: `index.html` for `/` and `stars/index.html` for `/stars`. Shared styling lives in `styles.css`. No framework or build process is required. Preview with `python3 -m http.server 4173 --bind 127.0.0.1`; verify with `python3 tests/check_site.py`.
 
-## Development Commands
-Since this is a static site with no build process:
-- **Run locally**: Open `index.html` directly in a web browser
-- **Test changes**: Refresh the browser after editing files
-- **Deploy**: Push to GitHub Pages or upload files to any static hosting service
+Keep navigation limited to UP³, STARS and the demo CTA. Use a small "Built by True Numbers" footer attribution. Do not add Company, About or Contact pages/sections, or forms. Demo CTAs use `mailto:info@truenumbers.tech` until a valid demo URL is supplied.
 
-## Architecture
-The codebase follows a simple, flat structure:
-- `index.html` - Single page containing all content sections
-- `styles.css` - All styling, organized by component with responsive breakpoints
-- `script.js` - Minimal functionality (form handler, intersection observer)
-- `images/` - All image assets
+Preserve clear development status. Ground implemented-feature claims in product code and verified captures; label any planned feature. Current visuals are synthetic workflow illustrations, explicitly labeled as such. See `docs/content-evidence.md` for provenance. Keep authorization, voucher filing, Finance review and payment distinct.
 
-## Key Technical Details
-- **Design System**: Miami Vice color scheme (pink #FF00FF, cyan #00FFFF) with dark theme
-- **Responsive Breakpoints**: 1200px, 900px, 768px, 500px
-- **CSS Architecture**: Component-based organization with BEM-like naming
-- **JavaScript**: ES6, no dependencies, progressive enhancement approach
-- **Form Handling**: Currently shows alert only - no backend integration
-
-## Common Tasks
-- **Update content**: Edit sections directly in `index.html`
-- **Modify styles**: Find component in `styles.css` (sections are clearly commented)
-- **Add images**: Place in `images/` folder and reference in HTML/CSS
-- **Test responsive design**: Use browser developer tools device emulation
+Use system fonts, local assets, native HTML interactions and a calm blue palette. Avoid continuous animation, scroll handlers and decorative large media. Any product captures must use synthetic data, dimensions and below-fold lazy loading. Test both desktop and mobile layouts, keyboard navigation and readable contrast.
