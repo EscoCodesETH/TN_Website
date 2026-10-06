@@ -55,7 +55,8 @@ class SiteContract(unittest.TestCase):
             anchors = page.all('a')
             self.assertTrue(any(a.get('href') == '/' for a in anchors), 'UP³ route link missing')
             self.assertTrue(any(a.get('href') == '/stars' for a in anchors), 'STARS route link missing')
-            self.assertGreaterEqual(sum(a.get('href') == 'mailto:info@truenumbers.tech' for a in anchors), 2, 'demo CTA needed in navigation and content')
+            self.assertGreaterEqual(sum(a.get('href') == 'mailto:info@truenumbers.dev' for a in anchors), 2, 'demo CTA needed in navigation and content')
+            self.assertEqual({a.get('href') for a in anchors if a.get('href', '').startswith('mailto:')}, {'mailto:info@truenumbers.dev'}, 'every demo email link must use the correct address')
             self.assertNotIn('Explore the demo', page.content(), 'no valid public demo URL supplied')
 
     def test_no_company_contact_or_unsupported_marketing(self):

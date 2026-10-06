@@ -22,7 +22,7 @@ Open `http://127.0.0.1:4173/` or `http://127.0.0.1:4173/stars`. Python redirects
 
 ## Content and visuals
 
-Both products are in development. No public demo URL was supplied or verified, so all demo buttons link directly to `mailto:info@truenumbers.tech`.
+Both products are in development. No public demo URL was supplied or verified, so all demo buttons link directly to `mailto:info@truenumbers.dev`.
 
 The interface visuals are **synthetic workflow illustrations, not actual product screenshots**. They are labeled beside each visual and in its accessible description. Replace them with verified captures when available; retain concise captions and synthetic data. New image assets should have descriptive alternative text, explicit dimensions, and lazy loading below the fold. The checks enforce a 250 kB per-image and 600 kB per-page media budget.
 
